@@ -8,7 +8,8 @@ public class TareaGH {
         Scanner scan = new Scanner(System.in);
         int a = 273;
         int b = 597;
-        float c = (float) 5.3; //segun la documentación, java asume los numeros de punto flotante como double automaticamente, es por eso que se tiene que forzar el float de 32 bits si se quiere especificamente este tipo de dato
+        float c = (float) 5.3; //segun la documentación, java asume los numeros de punto flotante como double automaticamente, 
+                               //es por eso que se tiene que forzar el float de 32 bits si se quiere especificamente este tipo de dato.
         float d = (float) 7.5;
         int e = 1234;
         int f = 532;
@@ -261,12 +262,12 @@ public class TareaGH {
         // 29 ejercicio
         System.out.println("-----Vigesimonoveno ejercicio-----");
         System.out.println("Este ejercicio solo se puede ejecutar efectivamente desde el CMD");
-//        System.out.println("Introduce datos (Ctrl+Z en Windows para finalizar):");
-//        while (scan.hasNextLine()){
-//            String input = scan.nextLine();  // Lee una línea de texto
-//            System.out.println("Ingresaste: " + input);  // Muestra lo que se ha ingresado
-//        }
-//        System.out.println("Se ha alcanzado el fin de los datos (haz usado el comando Ctrl+Z)");
+        System.out.println("Introduce datos (Ctrl+Z en Windows para finalizar):");
+        while (scan.hasNextLine()){
+            String input = scan.nextLine();  // Lee una línea de texto
+            System.out.println("Ingresaste: " + input);  // Muestra lo que se ha ingresado
+        }
+        System.out.println("Se ha alcanzado el fin de los datos (haz usado el comando Ctrl+Z)");
         // 30 ejercicio
         System.out.println("-----Trigesimo ejercicio-----");
         System.out.print("Los numeros primos entre 1 y 100 son: ");
@@ -286,7 +287,7 @@ public class TareaGH {
     }
     public static int factorial(int n){
         if (n==0){
-            return 1; // Caso base
+            return 1; 
         } else {
             return n * factorial(n - 1); // Llamada recursiva
         }
@@ -294,9 +295,9 @@ public class TareaGH {
     
     public static int ackermann(int m, int n){
         if (m==0){
-            return n + 1; // Caso base
+            return n + 1; 
         } else if (n==0){
-            return ackermann(m - 1, 1); // Caso cuando n es 0
+            return ackermann(m - 1, 1); 
         } else {
             return ackermann(m - 1, ackermann(m, n - 1)); // Llamada recursiva doble
         }
